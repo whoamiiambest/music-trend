@@ -1,0 +1,115 @@
+@CHARSET "ISO-8859-1";
+
+body {
+       /* background-image: url(https://images8.alphacoders.com/416/thumb-1920-416395.jpg); */
+       width: 1920px;
+       height: 1080px;
+}
+
+* {
+    color: black;
+}
+
+.title {
+    text-align: center;
+}
+
+
+.favoriteSong .albumCover a:hover > .iconPlay {
+    opacity: 1;
+}
+
+
+.favoriteSong li {
+    width: 190px;
+    float: left;
+    margin-right: 30px;
+    padding: 0px 0px;
+    height: 197px;
+    margin-bottom: 40px;
+    list-style: none;
+}
+
+.favoriteSong .albumCover {
+    float: left;
+    /* margin-bottom: 8px; */
+    width: 150px;
+    height: 90px;
+    overflow: hidden;
+}
+
+.favoriteSong .info {
+    float: left;
+    z-index: 10;
+    font-size: 15px;
+    color: #FFFFFF;
+    width: 100%;
+    /* bottom: 0px; */
+    /* line-height: 18px; */
+    border: 1px solid rgba(21, 82, 125, 0.13);
+}
+
+.favoriteSong .info a {
+    color: #444444;
+    text-decoration: none;
+    height: 20px;
+    width: 150px;
+    overflow: hidden;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.favoriteSong .info a:hover {
+    color: blue;
+}
+
+.favoriteSong .info p {
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-decoration: none;
+    width: 150px;
+    margin-top: 5px;
+}
+
+.favoriteSong .albumCover {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 120px;
+}
+
+.favoriteSong .albumCover img {
+    width: 100%;
+    height: 100%;
+}
+
+.favoriteSong .albumCover img:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.favoriteSong .albumCover .iconPlay {
+    position: absolute;
+    z-index: 1001;
+    top: 50%;
+    left: 50%;
+    margin: -24px 0 0 -24px;
+    width: 48px;
+    height: 48px;
+    display: none;
+    background: url(http://stc.id.nixcdn.com/v11/images/icon.png) left -28px
+        no-repeat;
+}
+
+.iconPlay {
+    opacity: 0;
+    visibility: visible;
+    display: block !important;
+    -webkit-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+}

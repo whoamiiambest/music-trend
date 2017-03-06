@@ -1,0 +1,326 @@
+.left-container {
+    margin-top: 30px;
+}
+
+.detail-container {
+    width: 85%;
+    height: 100%;
+    position: absolute;
+    border: 2px solid darkseagreen;
+    /* display: inline-block; */
+    /* top: 30px; */
+}
+
+ul {
+    list-style-type: amharic;
+}
+
+p {
+    font-size: 30px;
+    /* background-color: #ac2020; */
+    color: aqua;
+    text-align: center;
+}
+
+h1 {
+    color: #684d81;
+    text-align: center;
+    /* margin-top: -14px; */
+}
+
+.detail li {
+    margin-top: 20px;
+    color: black;
+    font-size: 16px;
+    font-family: cursive;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+.back-button {
+    float: left;
+    /* position: relative; */
+}
+
+.back-button img {
+    /* margin-top: 50px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* css bar graph */
+.bargraph {
+    height: 429px;
+    background: url('../images/papergrid.jpg') repeat-x;
+    border-left: 1px solid #d4d4d4;
+    width: 105%;
+    margin-top: 50px;
+}
+
+.bargraph ul.bars {
+    /* margin: 0; */
+    /* padding: 0; */
+    /* getting rid of bullets */
+    /* list-style-type: none; */
+    margin-bottom: -3px;
+}
+
+.bargraph ul.olympic-watermark {
+    background: url(http://pics.cssbakery.com/pics/orings.png) no-repeat;
+    background-position: 50% 50%;
+    height: 122px; /* IE fix */
+    z-index: 98;
+}
+
+.bargraph ul.euro-watermark {
+    background: url(http://pics.cssbakery.com/pics/sapphire5.png) no-repeat;
+    height: 201px; /* IE fix was 164*/
+    background-position: 0 0;
+}
+
+.bargraph ul.stars-watermark {
+    background: url(http://pics.cssbakery.com/pics/starcoin4.png) no-repeat;
+    background-position: 50% 50%;
+    height: 174px; /* IE fix */
+}
+
+div.bargraph div.colorfilter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 201px;
+    background-color: black;
+    opacity: 0.2;
+    filter: alpha(opacity = 20);
+    z-index: 97;
+}
+
+div.bargraph div.colorfilter2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 201px;
+    background-color: black;
+    opacity: 0.4;
+    filter: alpha(opacity = 40);
+    z-index: 97;
+}
+
+.bargraph ul.bars li {
+    position: absolute;
+    width: 46px;
+    height: 200px;
+    /*move it up from bottom label*/
+    bottom: 53px;
+    /* padding: 0; */
+    margin: 0;
+    background: url(../images/bars200.jpg) no-repeat;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    line-height: 2.5em;
+    font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    z-index: 99;
+}
+
+.bargraph ul.bars li span {
+    position: relative;
+    top: -25px;
+    color: #7c7c7c;
+}
+
+.bargraph ul.bars li img {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -71px;
+    left: 0;
+}
+
+.bargraph ul.bars li span.darkpen {
+    color: #515151;
+    position: static;
+}
+
+.bargraph ul.bars li span.whitepen {
+    color: red;
+}
+
+.bargraph ul.bars li.bar1 {
+    left: 36px;
+}
+
+.bargraph ul.bars li.bar2 {
+    left: 120px;
+}
+
+.bargraph ul.bars li.bar3 {
+    left: 206px;
+}
+
+.bargraph ul.bars li.bar4 {
+    left: 290px;
+}
+
+.bargraph ul.bars li.bar5 {
+    left: 373px;
+}
+
+.bargraph ul.bars li.bar6 {
+    left: 459px;
+}
+
+.bargraph ul.bars li.bar7 {
+    left: 543px;
+}
+
+.bargraph ul.bars li.bar8 {
+    left: 532px;
+}
+
+.bargraph ul.bars li.bar9 {
+    left: 605px;
+}
+
+/* bottom means 100% in background-position */
+.bargraph ul.bars li.bluebar {
+    background-position: 0px bottom;
+}
+
+.bargraph ul.bars li.redbar {
+    background-position: -45px bottom;
+}
+
+.bargraph ul.bars li.greenbar {
+    background-position: -90px bottom;
+}
+
+/* .bargraph ul.bars li.orangebar {
+    background-position: -135px bottom;
+} */
+
+.bargraph ul.bars li.grapebar {
+    background-position: red;
+}
+
+.bargraph ul.bars li.purplebar {
+    background-position: -180px bottom;
+}
+
+.bargraph ul.bars li.crimsonbar {
+    background-position: -180px bottom;
+}
+
+.bargraph ul.bars li.navybar {
+    background-position: -210px bottom;
+}
+
+.bargraph ul.bars li.goldbar {
+    background-position: -240px bottom;
+}
+
+.bargraph ul.bars li.tealbar {
+    background-position: -270px bottom;
+}
+
+.label {
+    list-style-type: none;
+    position: absolute;
+    bottom: 9px;
+    margin: 0;
+    padding: 0;
+}
+
+.label li {
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    width: 85px;
+    float: left;
+    text-align: center;
+    /*safeguard against a label that is too long - if they type
+          that in from the HTML
+        */
+    font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    line-height: 2.6em;
+}
+
+ul.y-axis {
+    list-style-type: none;
+    position: absolute;
+    /*
+                  positioning the ul box - the box that goes
+                  around the list, 100, 75,... */
+    left: -45px;
+    /* width: 60px; */
+    text-align: right;
+    bottom: -30px;
+    margin: 0;
+    padding: 0;
+}
+
+ul.y-axis li:first-child {
+    height: 93px;
+    /* line-height: 1px; */
+}
+
+ul.y-axis li {
+    color: #aba8a8;
+    font-size: 12px;
+    height: 93px;
+    /* line-height: 51px; */
+    text-align: right;
+}
+
+ul.y-axis li.units {
+    position: absolute;
+    bottom: 110px;
+    right: 20px;
+    line-height: 1.2em;
+    height: auto;
+}
+/*labeling of the graph*/
+.bargraph  p {
+    position: absolute;
+    left: 0;
+    top: 490px;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+    font-family: Verdana, sans-serif;
+    font-size: 25px;
+    color: black;
+    line-height: 1.3em;
+}
+
+.bargraph p.centered {
+    text-align: center;
+}
+
+.chart {
+    margin-left: 100px;
+}
+
+.label {
+	width: 102%;
+}
